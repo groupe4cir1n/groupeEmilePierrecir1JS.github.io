@@ -1,0 +1,116 @@
+form {
+
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.contenaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    color: #4CAF50;
+}
+
+#nom{
+    height: 30px;
+    border-radius: 5px;
+    background-image:url(image/person.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 18px;
+    padding-left: 25px;
+    border: solid;
+    margin: 10px;
+}
+#mail{
+    border: solid;
+    height: 30px;
+    border-radius: 5px;
+    background-image:url(image/email.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 18px;
+    padding-left: 25px;
+    margin: 10px;
+
+}
+#message{
+    width: 96%;
+    border: solid;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+#valider {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    form {
+        padding: 10px;
+        margin: 5px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    #nom, #mail {
+        height: 20px;
+        background-size: 14px;
+        padding-left: 20px;
+    }
+    #message {
+        width: 80%;
+    }
+    #valider {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    }
+    
+@media only screen and (max-width: 480px) {
+    form {
+        padding: 5px;
+        margin: 2px;
+    }
+    h1 {
+        font-size: 16px;
+    }
+    #nom, #mail {
+        height: 15px;
+        background-size: 12px;
+        padding-left: 15px;
+    }
+    #message {
+        width: 90%;
+    }
+    #valider {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    }

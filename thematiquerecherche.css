@@ -1,0 +1,67 @@
+@media only screen and (max-width: 600px) {
+    #thematiquederecherche {
+      flex-direction: column;
+    }
+    .titrethematique {
+      font-size: 1.5rem;
+    }
+    .txtthematique, .introrecherche {
+      font-size: 1rem;
+    }
+    .flexaxe {
+      flex-direction: column;
+      align-items: center;
+    }
+    .axe1recherche, .axe2recherche, .thematiquebox {
+      margin: 5px;
+    }
+    .thematiquebox {
+      margin-bottom: 50px;
+    }
+    .axe1recherche p:hover, .axe2recherche p:hover, .thematiquebox p:hover {
+      transform: none;
+      transition: 0.5s all ease;
+    }
+
+    }
+  
+
+
+#thematiquerecherche h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px 0;
+    color: #1f3f5b;
+    font-weight: 600;
+}
+
+#thematiquerecherche h4{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 50px 0;
+    color: #1f3f5b;
+    font-weight: 600;
+}
+.axe1recherche, .axe2recherche, .thematiquebox{
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #000;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+}
+
+.axe1recherche p:hover, .axe2recherche p:hover, .thematiquebox p:hover{
+    transform: scale(1.5);
+    
+    transition: 0.5s all ease;
+}

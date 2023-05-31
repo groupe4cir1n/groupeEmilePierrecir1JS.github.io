@@ -1,0 +1,68 @@
+#offreemploi{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 50px;
+}
+.descriptionoffre{
+    padding-left: 25px;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+.soustitre{
+
+    text-decoration: underline;
+}
+.titreoffre{
+    text-decoration: underline;
+}
+.postdoctoral{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    
+}
+.typeoffre{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+.thesecifre{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+.txtoffre{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    text-align: center;
+}
+.offrepostdocbox1{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 20px;
+    border: solid;
+}
+.offrethesebox{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 20px;
+    border: solid;
+}
+@media screen and (max-width: 768px) {
+    #offreemploi {
+    padding: 10px;
+    height: auto;
+    }
+    .descriptionoffre {
+    padding-left: 15px;
+    font-size: 1rem;
+    }
+    .postdoctoral, .typeoffre, .thesecifre, .txtoffre {
+    font-size: 1rem;
+    }
+    .offrepostdocbox1, .offrethesebox {
+    padding: 10px;
+    }
+    }

@@ -1,0 +1,109 @@
+@media only screen and (max-width: 768px) {
+    .partenaire {
+      width: 100%;
+      height: auto;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      margin: 25px 0;
+    }
+  
+    .partenaire .universitebretagne img, .malakoffmederic img, .ecr img, .kardham img, .castel img, .acome img, .generix img, .thales img, .universiteMVR img, .enis img, .thales img {
+      width: 50%;
+      height: auto;
+      max-width: 300px;
+      min-width: 200px;
+    }
+    .partenaire p{
+      font-size: 10px;
+    }
+    .partenaire .keywords span {
+      font-size: 8px;
+    }
+
+}
+  
+.partenaire{
+    width: 50%;
+    height: 50%;
+    
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+
+
+
+
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 50px 0;
+  color: #1f3f5b;
+  font-weight: 600;
+}
+
+.partenaire .universitebretagne, .malakoffmederic, .ecr, .kardham, .castel, .acome, .generix, .thales, .universiteMVR, .enis, .thales{
+   
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+} 
+.partenaire .universitebretagne img, .malakoffmederic img, .ecr img, .kardham img, .castel img, .acome img, .generix img, .thales img, .universiteMVR img, .enis img, .thales img{
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+.partenaire .keywords{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    
+}
+.partenaire .universitebretagne:hover .keywords span, .malakoffmederic:hover .keywords span, .ecr:hover .keywords span, .kardham:hover .keywords span, .castel:hover .keywords span, .acome:hover .keywords span, .generix:hover .keywords span, .thales:hover .keywords span, .universiteMVR:hover .keywords span, .enis:hover .keywords span, .thales:hover .keywords span{
+    color: white;
+    background-color: #1f3f5b;
+    transition: all 0.5s ease;
+
+}
+.partenaire .keywords span{
+    font-size: 10px;
+    color: white;
+    background-color: #777;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin: 5px;
+
+}
+.nationaux{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    overflow: visible;
+}
+.internationaux{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    overflow: visible;
+}

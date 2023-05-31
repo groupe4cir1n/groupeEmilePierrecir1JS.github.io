@@ -1,0 +1,169 @@
+.table-container {
+    max-width: 1000px; /* Largeur maximale de 800 pixels */
+    margin: 0 auto; /* Marge extérieure de 0 pixels */
+  }
+
+.publi{
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 70px;
+    margin: 20px;
+    box-shadow: 0 0 5px #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 6;
+    color: black;
+
+
+}
+h1{
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px 0;
+    color: #1f3f5b;
+    font-weight: 600;
+
+}
+#element{
+
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.publi h1{
+    font-size: 1.5em;
+    font-weight: 6;
+    color: black;
+}
+.publi td{
+    padding: 20px;
+    padding-top: 40px;
+    margin: 30px;
+    font-size: 1em;
+
+    color: black;
+}
+.publi th{
+
+    padding: 20px;
+    padding-bottom: 100px;
+
+}
+.publi tr{
+    padding: 20px;
+    padding-top: 100px;
+}
+.publi tr:hover{
+    box-shadow: 0 0 10px #ccc;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+
+
+}
+#com_congre{
+    width: 10px;
+    height: 10px;
+    background-color: #7578E6;
+}
+#article{
+    width: 10px;
+    height: 10px;
+    background-color: #993F54;
+}
+.filtre{
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  margin: 50px 0;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  
+}
+.filtre input{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+.filtre select{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .table-container {
+      max-width: 100%;
+    }
+  
+    .publi {
+      width: 90%;
+      height: auto;
+      padding: 20px;
+      margin: 10px;
+      font-size: 0.8em;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+      margin: 25px 0;
+    }
+  
+    #element {
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    .publi h1 {
+      font-size: 1.2em;
+    }
+  
+    .publi td {
+      padding: 10px;
+      margin: 10px;
+      font-size: 0.8em;
+    }
+  
+    .publi th {
+      padding: 10px;
+      padding-bottom: 50px;
+    }
+  
+    .publi tr {
+      padding: 10px;
+      padding-top: 50px;
+    }
+  
+    .publi tr:hover {
+    box-shadow: none;
+    transform: scale(1);
+    }
+    
+    #com_congre, #article {
+    width: 5px;
+    height: 5px;
+    }
+  }
+  
+  
+
+

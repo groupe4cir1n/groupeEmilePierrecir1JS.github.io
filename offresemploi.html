@@ -1,0 +1,424 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Offres d'emploi</title>
+        <style type="text/css">@import "style.css"; @import "menu.css";@import "footer.css";@import "offresemploi.css";</style>
+        <script src="function.js" defer></script>
+        <script src="test.js" defer></script>
+        <script src="main.js" defer></script>
+        
+    </head>
+
+    <body>      <div class="loader"></div>
+<header>
+                    
+
+                <nav>
+                    <ul>
+                      <li ><a id="image" href="accueil.html" ><img src="image/LabISEN.png"  alt="logo"></a></li>
+                        <li><a id="page" href="accueil.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg> Accueil</a></li>
+                        <li class="deroulant"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg> Recherche &ensp;</a>
+                        <ul class="sous">
+                            <li><a id="page" href="thematiquederecheche.html">Thématiques de recherche</a></li>
+                            <li><a id="page" href="PlateformeTechnologique.html">Plateformes technologiques</a></li>
+                        </ul>
+                      </li>
+                       <li><a id="page" onclick="confirmMembre()" href="membre.html" class="membre"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M352 128c0 70.7-57.3 128-128 128s-128-57.3-128-128S153.3 0 224 0s128 57.3 128 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM609.3 512H471.4c5.4-9.4 8.6-20.3 8.6-32v-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2h61.4C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z"/></svg> Membre</i></a></li>
+                      <li><a id="page" href="projet.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 96c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm-8 384V352h16V480c0 17.7 14.3 32 32 32s32-14.3 32-32V192h56 64 16c17.7 0 32-14.3 32-32s-14.3-32-32-32H384V64H576V256H384V224H320v48c0 26.5 21.5 48 48 48H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H368c-26.5 0-48 21.5-48 48v80H243.1 177.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9L120 256.9V480c0 17.7 14.3 32 32 32s32-14.3 32-32z"/></svg> Projets</a></li>
+                      <li><a id="page" href="publi.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg> Publications</a></li>
+                      <li><a id="page" href="partenaire.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M323.4 85.2l-96.8 78.4c-16.1 13-19.2 36.4-7 53.1c12.9 17.8 38 21.3 55.3 7.8l99.3-77.2c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2zm22.8 124.4l-51.7 40.2C263 274.4 217.3 268 193.7 235.6c-22.2-30.5-16.6-73.1 12.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-72 48V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c4.5-4.9 7.8-10.6 9.9-16.5c19.4 13 45.8 10.3 62.1-7.5c17.9-19.5 16.6-49.9-2.9-67.8l-134.2-123zM96 128H0V352c0 17.7 14.3 32 32 32H64c17.7 0 32-14.3 32-32V128zM48 352c-8.8 0-16-7.2-16-16s7.2-16 16-16s16 7.2 16 16s-7.2 16-16 16zM544 128V352c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V128H544zm64 208c0 8.8-7.2 16-16 16s-16-7.2-16-16s7.2-16 16-16s16 7.2 16 16z"/></svg> Partenaires</a></li>
+                      <li class="deroulant"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M144 80c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z"/></svg> Infos et Contactez-nous</a>
+                        <ul class="sous">
+                          <li><a id="page" href="Contacteznous.html">Contactez-nous</a></li>
+                          <li><a id="page" href="planacces.html">Plan d'accès</a></li>
+                          <li><a id="page" href="offresemploi.html">Offres d'emploi</a></li>
+                        </ul>
+                        <li><div  class="clock"></li>
+                        <li><div class="timer"></li>
+                      </li>
+                    </ul>
+                </nav>
+              </header>
+              <br>
+              <br>
+              <br>
+
+              <main>
+                  <div class="introoffre">
+                    <div class="txtoffre" align="center">L'équipe propose des emplois permanents et des emplois à durée déterminée (enseignants-chercheurs, doctorants, ingénieurs, techniciens informatique et assistants administratifs…).
+                    Pour postuler, vous pouvez consulter les fiches de postes en ligne et prendre contact avec les 
+                    responsables affichés. Enfin, pour les candidatures spontanées, merci de vous adresser au 
+                    responsable de l'équipe ( maher.jridi[at]isen-ouest.yncrea.fr).</div>
+                  </div>
+                  <div class="offrepostdocbox1">
+                        <div class="offrepostdoc">
+                          <br>
+                          <br>
+                          
+                          <h3 align="center" class="titreoffre">Offres post-doc</h3>
+                          <div class="postdocacome"> 
+                            <div class="typeoffre">Type d'offre : Ingénieur de recherche, post-doc</div>
+                            <br>
+                            Contexte : Chaire industrielle « Architecture de données pour l'Usine 4.0 ».
+                            <br>
+                            Avantages :
+                            <div class="descriptionoffre">
+            
+                                <li>Enterprise : ACOME</li>
+                                
+                                <li>Unité de recherche : L@bISEN Isen Yncrea Ouest .</li> 
+                                
+                                  <li>Contrat : CDD - 15 mois</li> 
+                                
+                                  <li>Salaire : 2700€ net/mois</li>
+                                  
+                                  <li>Lieu de travail : Nantes</li>
+                                  
+                                  <li>Spécialité : Architecture logicielle, manipulation de bases de données, infrastructure réseau, 
+                                  big data, analyse de données </li>
+                                  
+                                  <li>Date limite de candidature souhaitée : avant 15/11/2021 </li>
+                                  
+                                  <li>Possibilité d'embauche en CDI </li>
+                                  
+                                  <li>Déplacements pris en charge pour les missions entre ISEN et ACOME</li>
+                                  
+                                  <li>Mutuelle ( Possibilité d'ajouter des membres de la famille sans surcoût)</li>
+                                  
+                                  <li>Prévoyance</li>
+                                  
+                                  <li>Carte Tickets Restaurant</li>
+                                  
+                                  <li>Avantages CSE (Comité Social et Economique)</li>
+                                  
+                                  <li>Aide au déménagement (Aide plafonnée à 1 500 € + aide à trouver un logement par notre 
+                                  prestataire)</li>
+                                  <br> 
+                            </div>
+                            <h3 class="soustitre">Contexte :</h3>
+                            <br> 
+                            Ce contrat se déroule dans le cadre d'une chaire industrielle entre l'entreprise ACOME, leader 
+                            européen dans la création des câbles, et le L@bIsen le laboratoire de l'Ecole Supérieure de 
+                            l'Electronique et du Numérique. 
+                            <br>
+                            <br>
+                            ACOME - Mortain
+                            <br> 
+                            A la fois leader et spécialiste sur les marchés des réseaux télécoms et infrastructures, des réseaux 
+                            du bâtiment, de l'automobile et de l'embarqué, ACOME est aujourd'hui le 1er Groupe industriel 
+                            coopératif Français produisant des câbles, des tubes et de la fibre optique sur le territoire national 
+                            depuis 1932 et la 1ère SCOP de France (Société Coopérative et Participative) avec une forte 
+                            dynamique internationale et des implantations en Chine, en Afrique du Nord et au Brésil. 
+                            <br>
+                            www.acome.fr
+                            <br> 
+                            <br>
+                            L@bISEN site de Nantes
+                            <br> 
+                            Yncréa Ouest est un Établissement d'Enseignement Supérieur Privé d'Intérêt Général (EESPIG) 
+                            sous contrat avec le ministère de l'Enseignement Supérieur et de la Recherche. L'Association 
+                            Yncréa Ouest est membre d'Yncréa, premier pôle privé associatif d'écoles d'ingénieurs en France. 
+                            Yncréa Ouest gère l'école d'ingénieurs ISEN Yncréa Ouest, implantée sur les villes de Brest, Caen, 
+                            Nantes et de Rennes. L'école forme des élèves ingénieurs dans les technologies du numérique et 
+                            notamment les systèmes numériques embarqués, la robotique, l'énergie, les objets connectés 
+                            (IoT), l'intelligence artificielle, le big data, l'environnement, le développement durable, les 
+                            technologies marines et la cybersécurité. 
+                            <br>
+                            Les activités de recherche de l'équipe d'accueil (L@bISEN de l'Yncréa Ouest, évaluée par la 
+                            HCERES en 2021) sont centrées essentiellement sur le numérique et ses applications notamment 
+                            celles dans l'Usine 4.0, le campus connecté, le traitement des données et l'Intelligence Artificielle. 
+                            <br>
+                            <br>
+
+                            <a href="https://isen-nantes.fr/recherche-4/">https://isen-nantes.fr/recherche-4/</a>
+
+                            <br>
+                            <br>
+
+                            <h3 class="soustitre">Sujet :</h3>
+                            <br>
+                            <br>
+                            Dans le secteur industriel, les entreprises sont soumises à des demandes toujours plus fréquentes 
+                            de nouvelles versions de leurs produits pour répondre aux besoins en perpétuel évolution du 
+                            marché. L'industrie de la fabrication des câbles est particulièrement impactée par cette tendance 
+                            de fond qui pousse les laboratoires de conception des nouveaux produits à fournir toujours plus de 
+                            recettes des nouvelles fabrications en un temps réduit, en prenant en compte les normes imposées 
+                            par les clients. Afin d'améliorer le temps de mise sur marché, un enjeu important est de minimiser 
+                            le nombre de tentatives pour fabriquer un nouveau produit afin de minimiser le temps de conception 
+                            ainsi que les déchets générés par un nombre trop important d'essais infructueux. Pour cela, le 
+                            bureau d'étude de l'entreprise peut utiliser l'expérience et les informations acquises lors des 
+                            multiples tentatives déjà enregistrées pour obtenir les produits actuellement commercialisés. 
+                            Des masses importantes de données sont donc à disposition pour permettre l'étude des 
+                            paramètres qui influent sur la qualité et les particularités des nouveaux câbles générés. La difficulté 
+                            consiste à organiser les données et à les rendre à la demande dans les différents départements 
+                            de l'Usine. Par conséquent, une plateforme de gestion de données est nécessaire pour mise à 
+                            disposition des données. Plusieurs modèles de bases de données sont à mettre en place pour 
+                            suivre l'évolution des données et les préparer à la phase d'analyse qui permettra l'identification des 
+                            paramètres de conception qui ont un impact sur les indicateurs qu'il est nécessaire d'améliorer. 
+                            Le livrable principal de ce post doc sera de mettre en place l'architecture logicielle permettant de 
+                            collecter les données pour les traiter et les analyser. Si l'avancement des travaux le permet, le 
+                            candidat pourra proposer de nouveaux modèles d'optimisation pour généraliser la prise en compte 
+                            des indicateurs principaux dans la production de nouveaux câbles. 
+                            <br>
+                            <br>
+                            Le profil du candidat :
+                            <div class="descriptionoffre">
+                            <br> 
+                            <li>Connaissances dans le déploiement d'outils de manipulation de données (Kafka, 
+                            Kubernetes, etc.) </li>
+                            
+                            <li>Eventuellement, maîtrise des outils logiciels nécessaires à la collecte et le traitement des 
+                            données massives (Spark, Scalla, Hadoop, etc.)</li>
+                            <li>Manipulation des bases de données (SQL, NoSQL)</li>
+                            <li> Appétence pour les techniques de l'IA, prise de décision et les problématiques dans 
+                            l'industrie 4.0 </li>
+                          </div>
+                          <br>
+                          <br>
+                            Procédure de recrutement :
+                            <br>
+                            <br>
+                            Le contrat à durée déterminé de 15 mois est à pourvoir dès que possible, avec une opportunité 
+                            intéressante de poursuivre en CDI. 
+                            Les candidats doivent fournir une lettre de motivation manuscrite, un curriculum vitae (2 pages 
+                            max) et une notice individuelle ou un CV détaillé. Les 3 ou 4 meilleurs profils seront invités à faire 
+                            un exposé de 20 à 30 minutes qui sera suivi d'une séance de questions devant la commission de 
+                            spécialistes 
+                            <br>
+                            <br>
+                            <h3 class="soustitre">Contacts :</h3> 
+                            <br>
+                              Maher Jridi - maher.jridi@isen-ouest.yncrea.fr 
+                              <br>
+                              Benoit Lardeux - benoit.lardeux@isen-ouest.yncrea.fr 
+                              <br>
+                              Michael Lecointre - michael.lecointre@acome.fr
+                              <br>
+                          </div>
+                        </div>
+                  </div>
+                  <br>
+                  <br>
+                    <div class="postdoctoral"><li>Post-doctoral position (24 months) on Artificial Intelligence (AI) (OFFRE POURVUE)</li></div>
+                  <br>
+                  <br>
+                  <br>
+                  <div class="offrethesebox">
+                        <div class="offrethese">
+                          <h3 class="titreoffre">Offres These</h3>
+                          <br>
+                          <br>
+                          <br>
+                              <div class="theseoffre">
+                                <div class="thesecifre">Thèse CIFRE : Apprentissage automatique de la dynamique des utilisateurs dans les bâtiments 
+                                  intelligents</div>
+                                  <br>
+                                  <br>
+                                <div class="descriptionoffre">
+
+                                  <li>Type d'offre : Offre d'emploi</li>
+
+                                  <li>Contrat : CDD</li>
+
+                                  <li>Salaire : 28-30 k€ Brut/Annuel</li>
+
+                                  <li>Type de thèse : CIFRE</li>
+
+                                  <li>Avantages : Prise en charge des frais de déplacement, d'inscription à l'école doctorale, mutuelle, titres 
+                                  restaurant, embauche en CDI est souhaitée à l'issue de la thèse. </li>
+
+                                  <li>Lieu de travail : laboratoire de recherche L@bISEN Yncréa Ouest - Nantes, Kardham Digital à Paris
+                                  Spécialité : Intelligence Artificielle, Machine Learning, Analyse</li>
+
+                                  <li>Date limite de candidature : 15 juin 2022</li>
+                                  <br>
+                                  <br>
+                                </div>
+                                  <div class="txtoffre">Laboratoire de Recherche L@bISEN Yncréa Ouest - Nantes :</div>L’ISEN Yncréa Ouest est une école 
+                                  d’ingénieur post-bac reconnue comme un établissement d’enseignement supérieur privé d’intérêt 
+                                  général sous contrat avec le ministère de l’Enseignement Supérieur et de la Recherche. Les activités 
+                                  de recherche de l’équipe d’accueil (L@bISEN de l’Yncréa Ouest) sont centrées essentiellement sur le 
+                                  numérique et ses applications en lien avec le traitement de données, l’IA, Big-data, l’industrie du futur, 
+                                  les campus connectés et la vision par ordinateur.
+                                  <br> 
+                                  <br>
+                                  <div class="txtoffre">Contexte scientifique et technique :</div> En France, la consommation énergétique dans le secteur du 
+                                  bâtiment (résidentiel et tertiaire) représente 44% de la consommation globale, loin devant celle dans 
+                                  l’industrie et les transports [1]. Cette consommation est équivalente à 1,1 tonne de pétrole par an et
+                                  par habitant. Cette part de consommation ne cesse d’augmenter pour totaliser une hausse de 30% 
+                                  sur les dernières 3 décennies. Entretemps, les bâtiments modernes intègrent de plus en plus des 
+                                  composantes digitales comme les capteurs, microcontrôleurs et moyens de communications. Les 
+                                  objets connectés deviennent une composante nécessaire dans les nouvelles constructions et les cas 
+                                  d’usages de ces objets dans les bâtiments fusent avec un objectif global de contribuer à la maitrise de 
+                                  la consommation dans les bâtiments et à leur réduction. De nouveaux systèmes ont vu le jour pour (i) 
+                                  être informé de l’état du bâtiment ou pour (ii) agir sur les bâtiments comme les solutions EcoStrcuture 
+                                  ou Gapéo dédiée au pilotage du confort et de la performance environnementale et énergétique.
+                                  <br>
+                                  <br> 
+                                  L’usage des nouvelles technologies dans le bâtiment n’est pas exclusivement dédié aux réductions des 
+                                  énergies. La sécurité, l’amélioration du confort thermique, la gestion intelligente des espaces de 
+                                  travail sont un exemple de réalisations récentes. Plus particulièrement, la combinaison destechniques 
+                                  de captation de données avec les avancées récentes dans le domaine de l’intelligence artificielle peut 
+                                  contribuer à la mise en place d’application permettant la fluidification du parcours du collaborateur 
+                                  en entreprise. En effet, avec les nouvelles tendances regroupées dans un paradigme connu sous le 
+                                  nom du New World of Work (NWOW), il est intéressant pour l’entreprise de connaitre l’occupation 
+                                  temps réel de ses espaces de travail et de faire des profils d’utilisation selon l’activité, le collaborateur, 
+                                  l’espace de travail, la temporalité, etc. L’objectif étant de pouvoir réserver aux éventuels espaces sousutilisés un nouvel usage ou de les rentabiliser avec de la location ce qui permet également des 
+                                  économies financières pour l’entreprise et énergétique pour la ville.
+                                  <br>
+                                  <br>
+                                  <div class="txtoffre">Objectifs de la thèse :</div> Face à ce paysage concurrentiel, le groupe Kardham Digital souhaite proposer 
+                                  des solutions innovantes pour permettre à l’industrie de l’immobilier de l’entreprise une meilleure 
+                                  
+                                  efficacité économique. <div class="txtoffre">Le constat que nous faisons est que les bâtiments intelligents reposent sur 
+                                  peu d’algorithmes, qui de surcroît, manquent d’interaction avec les usagers.</div> Ces derniers souhaitent 
+                                  reprendre le contrôle sur le bâtiment en ajoutant des services innovants. Par conséquent, la prise en 
+                                  compte du comportement de l’occupant de l’espace connecté présente un enjeu majeur et nécessite 
+                                  des études plus approfondies.
+                                  <br>
+                                  <br>
+                                  Plus particulièrement, à travers cette thèse, nous cherchons à répondre à des nouvelles questions 
+                                  posées par ce contexte. Des questions prosaïques telles que :
+                                  <br>
+                                  <br>
+                                  <div class="descriptionoffre">
+                                  <li> Comment réduire les espaces tout en maximisant le confort des utilisateurs ? </li>
+                                  <li> Quelles applications pouvons-nous proposer pour faciliter la vie à l’intérieur du bâtiment ? </li>
+                                  <li> Comment répondre au mieux aux demandes des propriétaires des immeubles qui cherchent</li>
+                                  à augmenter l’attractivité de leur bien en proposant des services innovants et performants ?
+                                  <li> Quels services pouvons-nous rendre aux locataires pour fluidifier l’expérience des utilisateurs 
+                                  et collaborateurs ?</li>
+                                  <li> Quels usages pouvons-nous tirer des capteurs générant des données ? Quels capteurs nous 
+                                  donneront accès à des cas d’usage plus pertinents ? Cet usage compensera-t-il le cout 
+                                  énergétique de fabrication du capteur ?</li>
+                                  <li> Peut-on avoir une cartographie sur les flux des données échangés dans le bâtiment connecté 
+                                  et comment utiliser ces données massives ?</li>
+                                  <li> Quelle différentiation entre l’occupation des salles de réunion et de bureaux individuels ?</li>
+                                  <li> Dans quelles mesures les services proposés sont dynamiques ?</li>
+                                  </div>
+
+                                  Finalement, par cette thèse nous souhaitons proposer une solution logicielle à base d’algorithmes 
+                                  capables de manipuler et analyser des données dans le cadre du bâtiment tertiaire intelligent. A 
+                                  travers ces algorithmes, de nouveaux services seront proposés exploitant la prédiction du 
+                                  comportement de l’occupant de l’environnement connecté. Les données collectées dans le bâtiment 
+                                  intelligent de Kardham feront l’objet d’observations sur le terrain, puis à l’aide de modèles 
+                                  mathématiques (Machine Learning) seront éprouvées et expérimentées. Les algorithmes sous-jacents 
+                                  seront alors déployés en phase de test avec retour d’expérience et amélioration des méthodes.
+                                  <br>
+                                  <br>
+                                  [1] ADEME, Climat, Air et Energie : les chiffres clés, tech. rep., ADEME, 2018.
+                                  <br>
+                                  <br>
+                                  <div class="txtoffre">Profil du Candidat (e) :</div> Pour cette thèse, nous recherchons un(e) jeune doctorant(e) fortement 
+                                  motivé(e) et ayant un goût prononcé pour l’innovation. Il/elle devra participer au développement de 
+                                  la solution qui s’intègre dans les offres proposées Kardham Digital. 
+                                  Concernant les aspects liés à la recherche, le/la candidat(e) devra être titulaire d’un Master ou d’un 
+                                  diplôme d’ingénieurs avec des compétences en Machine Learning, intelligence artificielle et/ou 
+                                  gestion des données massives. Il/elle est aussi nécessaire qu’il/elle ait une expérience réussie dans le 
+                                  développement informatique. Un recul sur les questions sociales liées aux bâtiments et à la ville 
+                                  intelligents est nécessaire. Un excellent niveau d’expression en français à l’écrit et à l’oral est exigé.
+                                  <br>
+                                  <br>
+                                  <div class="txtoffre">Procédure de Recrutement :</div>
+                                  Le poste en contrat à durée déterminée (3 ans) est à pourvoir dès que possible, au plus tard le 
+                                  01/10/2022. Fin de la réception des candidatures le 15/06/2022.
+                                  Les candidats doivent fournir une lettre de motivation manuscrite, un curriculum vitae (2 pages max), 
+                                  les derniers relevés de notes, accompagnés de lettres de recommandation. 
+                                  Un entretien technique et un entretien RH seront programmés pour les candidat sélectionnés.
+                                  <br>
+                                  <br>
+                                  
+                                  <div class="txtoffre">Contacts : </div>
+                                  <br>
+                                  <br>
+                                  • Maher JRIDI (Dr, HDR, directeur de la thèse) : maher.jridi@isen-ouest.yncrea.fr
+                                  <br>
+                                  • Matthieu SAUMARD (Dr, co-encadrant de la thèse) : matthieu.saumard@isen-ouest.yncrea.fr
+                                  <br>
+                                  • Nicolas COCHARD (Dr, Responsable R&D, Kardham) : ncochard@kardham.com
+                                  <br>
+
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                  <br>
+                  <br>
+                  <br>
+                  <div class="offrestage">
+                  <h3 align="center"> Offres de stages</h3>
+                  <li>Aucun poste pour le moment</li>
+                </div>
+              </main>
+
+
+
+
+
+
+
+              <footer>
+                <div id="footer-lieu">
+                  <h4>Lieux d'étude:</h4>
+                  <a href="#Nantes">Nantes</a>
+                  <a href="#Brest">Brest</a>
+                  <a href="#Rennes">Rennes</a>
+                  <a href="#Caen">Caen</a>
+                </div>
+    
+    
+                <div id="footer-contact">
+                    <h4>Contactez-nous:</h4>
+    
+                      <a href="https://www.linkedin.com/in/emile-duplais-43ba46214/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg> Emile</a>
+                      <a href="https://www.linkedin.com/in/pierre-zboril-berteaud-57644725a/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg> Pierre</a>
+    
+                  </div>
+              </footer>
+            
+              <div class ="popup">
+                <div id="Nantes" class="modal">
+                  <div class="modal_content">
+                    <h1>Nantes</h1>
+    
+                    <p class="num" onkeyup="phone()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>       +33(0)2 30 13 05 60</p>
+                    <a href="https://www.google.fr/maps/place/ISEN+Nantes/@47.2748664,-1.5050521,15z/data=!4m5!3m4!1s0x0:0xf9cb0e917832eb00!8m2!3d47.2748664!4d-1.5050521"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg> 35 Avenue du Champ de Manœuvre44470 CARQUEFOU</a>
+    
+                    <a href="#" class="modal_close">&times;</a>
+                  </div>
+                </div>
+                <div id="Brest" class="modal">
+                  <div class="modal_content">
+                    <h1>Brest</h1>
+    
+                    <p class="num" onkeyup="phone()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>       +33(0)2 98 03 84 00</p>
+                    <a href="https://goo.gl/maps/HFDam6sLyprwWffh6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg> 20 rue Cuirassé Bretagne29200 BREST</a>
+    
+    
+                    <a href="#" class="modal_close">&times;</a>
+                  </div>
+                </div>
+                <div id="Rennes" class="modal">
+                  <div class="modal_content">
+                    <h1>Rennes</h1>
+    
+                    <p class="num" onkeyup="phone()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>       +33(0)2 30 13 02 50</p>
+                    <a href="https://goo.gl/maps/GbCBU9PGREFErpNU6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg> 2 rue Robert d'Arbrissel35005 RENNES</a>
+                    
+                    <a href="#" class="modal_close">&times;</a>
+                  </div>
+                </div>
+                <div id="Caen" class="modal">
+                  <div class="modal_content">
+                    <h1>Caen</h1>
+    
+                    <p class="num" onkeyup="phone()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>       +33(0)2 30 31 03 20</p>
+                    <a href="https://goo.gl/maps/zoVouTF8ckPRPEMB9"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg> 8 avenue Croix Guérin14000 CAEN</p>
+    
+                    <a href="#" class="modal_close">&times;</a>
+                  </div>
+                </div>
+              </div>
+  </body>
+</html>
